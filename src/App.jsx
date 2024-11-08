@@ -1,7 +1,7 @@
-// src/App.jsx
+import Home from "./components/Home";
 
 const App = () => {
-  return <h1>Hello world!</h1>;
+  return <Home />;
 };
 
 export default App;
