@@ -1,8 +1,13 @@
+body {
+  background-color: black
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: black;
 }
 
 .logo {
@@ -11,9 +16,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -22,6 +29,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -39,4 +47,63 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.track-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* This creates a 3-column grid */
+  gap: 20px;
+  /* Adds space between the grid items */
+  padding: 20px;
+
+}
+
+.trackBox {
+  background-color: rgb(61, 59, 59);
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+}
+
+.button {
+  background-color: rgb(5, 5, 5);
+  color: white;
+
+}
+
+.newTrackButton {
+  background-color: orangered;
+  color: white
+}
+
+.nowPlayingBox {
+  background-color: rgb(44, 42, 42);
+  border-radius: 5px;
+  color: white;
+  text-align: left;
+  padding: 5px 20px
+}
+
+.nowPlayingTitle {
+  color: orangered
+}
+
+.title {
+  color: rgb(255, 217, 0);
+}
+
+.song {
+  color: white
+}
+
+.tracklist {
+  color: orangered;
+  font-size: 20px;
+  padding-top: 10px
+}
+
+.tracklistContainer {
+  background-color: rgb(35, 34, 34);
+  border-radius: 5px;
 }
